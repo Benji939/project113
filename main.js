@@ -39,3 +39,6 @@ fill(250, 142, 227)
 rect(475,75,50,329)
 image(video,235,185,125,125)
 }
+function take_snapshot(){
+    save('student_name.png')
+}
