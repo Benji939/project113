@@ -2,7 +2,9 @@ function preload(){
 
 }
 function setup(){
-createCanvas(600,480)
+
+canvas = createCanvas(600,480);
+canvas.center();
 video = createCapture(VIDEO);
 video.hide();
 }
@@ -37,8 +39,9 @@ fill(250, 142, 227)
 rect(75,75,50,329)
 fill(250, 142, 227)
 rect(475,75,50,329)
-image(video,235,185,125,125)
+image(video,185,135,175,175)
 }
 function take_snapshot(){
     save('student_name.png')
+    image()
 }
